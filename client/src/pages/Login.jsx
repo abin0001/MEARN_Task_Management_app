@@ -5,13 +5,14 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Login = () => {
+    const user="";
 
     const {register, handleSubmit, formState:{errors}} = useForm();
 
     const navigate =useNavigate();
 
     useEffect(()=>{
-        user && navigate('/dashboard')
+        user && navigate('/dashboard');
     },[user]);
   return (
 
@@ -21,7 +22,7 @@ const Login = () => {
 
                 <div className='w-full md:max-w-lg 2xl:max-w-3xl flex flex-col items-center justify-center gap-5 md:gap-y-10 2xl:mt-20'>
 
-                    <span className='flex gap-1 py-1 px-3 border rounded-full text-sm md:text-base border-gray-50-300 text-gray-600'>
+                    <span className='flex gap-1 py-1 px-3 border rounded-full text-sm md:text-base bordergray-50-300 text-gray-600'>
                         Manage all your task in one place!
                     </span>
 

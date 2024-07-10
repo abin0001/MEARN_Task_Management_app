@@ -3,6 +3,7 @@ import Login from './pages/Login.jsx'
 import { Route, Routes, Navigate, Outlet, useLocation} from "react-router-dom"
 import Tasks from './pages/Tasks.jsx';
 import Trash from './pages/Trash.jsx';
+import User from './pages/User.jsx'
 import TaskDetails from './pages/TaskDetails.jsx';
 import { Toaster } from 'sonner';
 
